@@ -9,6 +9,6 @@ app.use(cors())
 app.use(express.json())
 const port = process.env.SERVER_PORT
 AppDataSource.initialize().then(async()=>{
-    console.log("Db OK")
-    app.listen(port,()=>console.log(`Server is listening on ${port}`))
-})
+    console.log("DB OK 👍")
+    app.listen(port,()=>console.log(`Server is listening on ${port} 👂`))
+}).catch(err=>console.error(err))
